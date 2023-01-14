@@ -1,4 +1,5 @@
-﻿Console.Clear();
+﻿//Отбирает из массива строк элементы, в которых меньше 4 символов.
+Console.Clear();
 Console.Write("Введите элементы строки через пробел:");
 string[] array = Console.ReadLine().Split(" ");
 Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
@@ -30,6 +31,6 @@ void Search(string[] array)
         }
 
     }
-    Console.WriteLine($"[{string.Join(", ", resultArray)}]");
+    Console.WriteLine($"Результат: [{string.Join(", ", resultArray)}]");
 }
 Search(array);
